@@ -5,11 +5,122 @@
 body {
     font-family: $font-family;
     font-weight: $font-normal;
-    color: $dark;
+    color: $white;
     line-height: 1.35;
+    background-color: $primary;
 }
 
 a {
     text-decoration: none;
-    color: $dark;
 }
+
+.secondary-text {
+    color: $secondary;
+}
+
+section {
+    position: relative;
+}
+
+/*=============================================
+=            Section Top            =
+=============================================*/
+.section-top {
+    min-height: 50vh;
+    @include backImage($gradient-0, "../images/bg1.png");
+    @include background;
+    @include media-max("md") {
+        min-height: 30vh;
+    }
+}
+
+.content-top {
+    position: absolute;
+    top: 100px;
+    right: 70px;
+    width: 40%;
+    @include media-max("md") {
+        text-align: center;
+        position: static;
+        width: 100%;
+    }
+}
+
+/*=====  End of Section Top  ======*/
+
+/*=============================================
+=            Section Stream            =
+=============================================*/
+.section-stream {
+    min-height: 70vh;
+    @include backImage($gradient-0, "../images/bg2.png");
+    @include background;
+    @include media-max("md") {
+        min-height: 50vh;
+    }
+}
+
+.play {
+    width: 20%;
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    @include media-max("md") {
+        position: static;
+        width: 50%;
+        display: block;
+        margin: 30px auto;
+    }
+}
+
+.content-stream {
+    position: absolute;
+    width: 40%;
+    top: 130px;
+    right: 70px;
+    @include media-max("md") {
+        position: static;
+        width: 100%;
+    }
+}
+
+.stream-item,
+.grid-content {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/*=====  End of Section Stream  ======*/
+
+/*=====  Section Stream  ======*/
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    @include media-max("md") {
+        display: block;
+    }
+}
+
+.grid-text {
+    color: $text;
+}
+
+.dot {
+    font-size: 2rem;
+}
+
+/*=====  End of Section Grid  ======*/
+
+/*=============================================
+=            Footer            =
+=============================================*/
+.footer {
+    border-top: 1px solid $text;
+}
+
+.footer-nav-list {
+    @include flex(space-around);
+}
+
+/*=====  End of Footer  ======*/

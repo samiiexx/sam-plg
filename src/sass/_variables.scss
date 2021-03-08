@@ -3,8 +3,9 @@
 =============================================*/
 
 /* Colors */
-$primary: #faae7b;
-$secondary: #cc8b79;
+$primary: #2d2254;
+$secondary: #f5c42f;
+$text: #c5bbec;
 $success: #06af52;
 $danger: #ff6347;
 $warning: #ffc107;
@@ -14,7 +15,7 @@ $grey: #565655;
 $white: #ffffff;
 
 /* Typography */
-$font-family: "Josefin Sans", sans-serif;
+$font-family: "Montserrat Alternates", sans-serif;
 $font-normal: 400;
 $font-bold: 700;
 
@@ -43,7 +44,7 @@ $slow: 0.6s ease-out;
 /*=============================================
 =            Gradients            =
 =============================================*/
-$gradient-0: rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7);
+$gradient-0: rgba(255, 255, 255, 0), rgba(255, 255, 255, 0);
 $gradient-1: rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3);
 
 /*=====  End of Gradients  ======*/
